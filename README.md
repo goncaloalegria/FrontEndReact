@@ -172,7 +172,7 @@ npm start
 | Erros de TypeScript | Correr `npx tsc --noEmit` para ver erros detalhados |
 
 ---
-👤 Autor
+## 👤 Autor
 
 Gonçalo Alegria —  @goncaloalegria
 
