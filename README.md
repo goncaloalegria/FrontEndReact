@@ -1,36 +1,179 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚛️ FrontEndReact — App Web com React & Next.js
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://appnextalegria2.vercel.app)
 
-First, run the development server:
+**Aplicação web com múltiplas páginas em React e Next.js — desde componentes básicos até uma loja completa com carrinho, pesquisa e checkout**
+
+[Descrição](#-descrição) •
+[Funcionalidades](#-funcionalidades) •
+[Páginas](#-páginas) •
+[Tecnologias](#-tecnologias) •
+[Demonstração](#-demonstração) •
+[Instalação](#-instalação)
+
+---
+
+## 📋 Descrição
+
+O **FrontEndReact** é uma aplicação web desenvolvida com **React** e **Next.js** (App Router) no âmbito da unidade curricular de Desenvolvimento de Interfaces Web. O projeto demonstra a evolução desde componentes JSX simples até funcionalidades avançadas como gestão de estado, rotas dinâmicas, integração com API REST e checkout com descontos.
+
+A aplicação está deployada na **Vercel** e inclui 9 páginas que cobrem os conceitos fundamentais do desenvolvimento frontend moderno.
+
+---
+
+## ✨ Funcionalidades
+
+| Funcionalidade | Descrição |
+|---|---|
+| ⚛️ **Componentes React** | Componentes funcionais com JSX e props |
+| 🔀 **Routing (App Router)** | Navegação entre páginas com Next.js App Router |
+| 🔢 **Contador com Estado** | `useState` com incremento, decremento, reset e histórico |
+| 📝 **Input Controlado** | Gestão de formulários com estado React |
+| 🛒 **Loja DEISI** | Catálogo de produtos com carrinho de compras |
+| 🔍 **Pesquisa e Ordenação** | Filtro em tempo real e ordenação por nome/preço |
+| 🎓 **Descontos** | Desconto estudante DEISI e cupão de desconto |
+| 💳 **Checkout** | Finalização de compra com validação |
+| 📂 **Rotas Dinâmicas** | Páginas de categorias com routing dinâmico |
+| 🚀 **Deploy Vercel** | Aplicação live com deploy automático |
+
+---
+
+## 📄 Páginas
+
+| Página | Rota | Descrição |
+|---|---|---|
+| **Intro** | `/` | Homepage com apresentação e introdução ao JSX |
+| **Sobre** | `/sobre` | Contexto sobre desenvolvimento web moderno |
+| **Características** | `/caracteristicas` | Features do React e Next.js |
+| **Tecnologias** | `/tecnologias` | Stack tecnológica utilizada |
+| **Projetos** | `/projetos` | Projetos desenvolvidos |
+| **Contador** | `/contador` | Contador interativo com histórico de valores |
+| **Input** | `/input` | Formulário com inputs controlados |
+| **Produtos** | `/produtos` | Loja DEISI com carrinho, pesquisa, ordenação e checkout |
+| **Categorias** | `/categorias` | Listagem de categorias com rotas dinâmicas |
+
+### Página de Produtos — Funcionalidades
+
+| Funcionalidade | Descrição |
+|---|---|
+| 🛍️ **Catálogo** | Produtos carregados da API DEISIShop |
+| 🔍 **Pesquisa** | Filtro em tempo real por nome |
+| ↕️ **Ordenação** | Nome (A→Z / Z→A) e preço (crescente / decrescente) |
+| 🛒 **Carrinho** | Adicionar/remover produtos com subtotal automático |
+| 🎓 **Estudante DEISI** | Toggle de desconto para estudantes |
+| 🏷️ **Cupão** | Campo para código de desconto |
+| 💳 **Checkout** | Validação de nome e finalização de compra |
+
+---
+
+## 🛠️ Tecnologias
+
+| Tecnologia | Utilização |
+|---|---|
+| **Next.js** | Framework React com App Router e SSR |
+| **React** | Biblioteca de componentes e gestão de estado |
+| **TypeScript** | Tipagem estática para maior robustez |
+| **Tailwind CSS** | Estilização utilitária e responsiva |
+| **ESLint** | Linting e qualidade de código |
+| **Vercel** | Deploy e hosting |
+| **DEISIShop API** | API REST para produtos e checkout |
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+FrontEndReact/
+├── app/                    # Páginas (Next.js App Router)
+│   ├── page.tsx            # Homepage (Intro)
+│   ├── sobre/
+│   ├── caracteristicas/
+│   ├── tecnologias/
+│   ├── projetos/
+│   ├── contador/
+│   ├── input/
+│   ├── produtos/
+│   └── categorias/
+│       └── [slug]/         # Rota dinâmica
+│
+├── components/             # Componentes React reutilizáveis
+├── lib/                    # Utilitários e configurações
+├── models/                 # Modelos de dados / tipos TypeScript
+├── public/                 # Assets estáticos
+│
+├── package.json
+├── tsconfig.json
+├── next.config.ts
+├── postcss.config.mjs
+├── eslint.config.mjs
+└── globals.d.ts
+```
+
+---
+
+## 🚀 Demonstração
+
+A aplicação está live na Vercel:
+
+### **🔗 [Ver aplicação](https://appnextalegria2.vercel.app)**
+
+---
+
+## 💻 Instalação
+
+### Pré-requisitos
+
+| Requisito | Descrição |
+|---|---|
+| **Node.js 18+** | Runtime JavaScript |
+| **npm / yarn / pnpm** | Gestor de pacotes |
+
+### 1. Clonar o Repositório
+
+```bash
+git clone https://github.com/goncaloalegria/FrontEndReact.git
+cd FrontEndReact
+```
+
+### 2. Instalar Dependências
+
+```bash
+npm install
+```
+
+### 3. Executar em Desenvolvimento
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrir [http://localhost:3000](http://localhost:3000) no browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Build de Produção
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🔧 Resolução de Problemas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Problema | Solução |
+|---|---|
+| `npm install` falha | Verificar versão do Node.js (18+): `node -v` |
+| Produtos não carregam | Verificar ligação à internet (API em `deisishop.pythonanywhere.com`) |
+| Porta 3000 ocupada | Usar `npm run dev -- -p 3001` para outra porta |
+| Erros de TypeScript | Correr `npx tsc --noEmit` para ver erros detalhados |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🙏 Agradecimentos
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Universidade Lusófona](https://www.ulusofona.pt/) — Instituição de ensino
+- [Next.js](https://nextjs.org/) — Framework React
+- [Vercel](https://vercel.com/) — Plataforma de deploy
+- [DEISI Shop API](https://deisishop.pythonanywhere.com/) — API de produtos
