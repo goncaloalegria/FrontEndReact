@@ -21,7 +21,7 @@
 
 O **FrontEndReact** é uma aplicação web desenvolvida com **React** e **Next.js** (App Router) no âmbito da unidade curricular de Desenvolvimento de Interfaces Web. O projeto demonstra a evolução desde componentes JSX simples até funcionalidades avançadas como gestão de estado, rotas dinâmicas, integração com API REST e checkout com descontos.
 
-A aplicação está deployada na **Vercel** e inclui 9 páginas que cobrem os conceitos fundamentais do desenvolvimento frontend moderno.
+A aplicação tem o deploy feito na **Vercel** e inclui 9 páginas que cobrem os conceitos fundamentais do desenvolvimento frontend moderno.
 
 ---
 
