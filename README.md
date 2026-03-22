@@ -171,6 +171,13 @@ npm start
 | Porta 3000 ocupada | Usar `npm run dev -- -p 3001` para outra porta |
 | Erros de TypeScript | Correr `npx tsc --noEmit` para ver erros detalhados |
 
+---
+👤 Autor
+
+Gonçalo Alegria —  @goncaloalegria
+
+---
+
 ## 🙏 Agradecimentos
 
 - [Universidade Lusófona](https://www.ulusofona.pt/) — Instituição de ensino
